@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculadora de Alquileres</title>
+</head>
+
+<body class="bg-sky-200 ">
+    <main>
+        <h1 class="font-bold text-2xl">
+            Calculadora de Honorarios Profesionales
+        </h1>
+
+        <form action="" class="formulario" id="formulario">
+            <div class="campo">
+                <p class="bg-sky-300 border-2 border-sky-400">Fecha del último valor cobrado</p>
+            </div>
+
+            <div>
+                <select class="formulario__input" name="dia1" id="dia1" required disabled>
+                    <option value="">Día</option>
+                    <option value="01" selected>01</option>
+                </select>
+            </div>
+            <div>
+                <select class="formulario__input" name="mes1" id="mes1" required>
+                    <option value="1">Mes</option>
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero</option>
+                    <option value="03" selected>Marzo</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Mayo</option>
+                    <option value="06">Junio</option>
+                    <option value="07">Julio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+            </div>
+            <div>
+                <select class="formulario__input" name="anio1" id="anio1" required>
+                    <option value="1">Año</option>
+                    <option value="2023">2023</option>
+                    <option value="2024" selected>2024</option>
+                </select>
+            </div>
+            <p class="fechas">La fecha no puede ser anterior al 01-01-2023</p>
+
+            <div class="campo">
+                <p class="bg-sky-300 border-2 border-sky-400">Valor cobrado</p>
+            </div>
+
+            <div class="select-precio1">
+                <div>
+                    <input type="number" class="formulario__input" name="precio1" id="precio1" placeholder="15000">
+                </div>
+            </div>
+
+            <div class="campo">
+                <p class="bg-sky-300 border-2 border-sky-400">Calcular Honorarios actuales</p>
+            </div>
+
+            <div>
+                <select class="formulario__input" name="dia2" id="dia2" required disabled>
+                    <option value="1">Día</option>
+                    <option value="01" selected>01</option>
+                </select>
+            </div>
+            <div>
+                <select class="formulario__input" name="mes2" id="mes2" required>
+                    <option value="1">Mes</option>
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero</option>
+                    <option value="03">Marzo</option>
+                    <option value="04" selected>Abril</option>
+                    <option value="05" disabled>Mayo</option>
+                    <option value="06" disabled>Junio</option>
+                    <option value="07" disabled>Julio</option>
+                    <option value="08" disabled>Agosto</option>
+                    <option value="09" disabled>Septiembre</option>
+                    <option value="10" disabled>Octubre</option>
+                    <option value="11" disabled>Noviembre</option>
+                    <option value="12" disabled>Diciembre</option>
+                </select>
+            </div>
+            <div>
+                <select class="formulario__input" name="anio2" id="anio2" required>
+                    <option value="1" selected>Año</option>
+                    <option value="2024" selected>2024</option>
+                </select>
+            </div>
+            <p class="fechas">La fecha de renovación no puede ser posterior a-2024 ya que es la última
+                actualización publicada por el BCRA.</p>
+
+            <div class="formulario__grupo-btn-calcular">
+                <button type="button" onclick="obtenerDatos()" class="formulario__btn">Calcular</button>
+                <p id="formulario__mensaje-precio2"></p>
+            </div>
+        </form>
+
+        <p class="disclaimer">
+            ADVERTENCIA: Esta calculadora es un trabajo práctico de JavaScript que puede contener errores. Se mantiene
+            actualizada con
+            los valores mensuales del UVA (Unidad de Valor Adquisitivo).
+        </p>
+    </main>
+
+    <script src="./js/javascript.js"></script>
+
+    <body>
+
+</html>
