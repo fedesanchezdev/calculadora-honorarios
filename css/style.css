@@ -19,7 +19,7 @@ main {
     margin: auto;
     margin-top: 40px;
     padding: 40px;
-    border: solid 3px rgb(194, 213, 243);
+    border: solid 3px rgb(91, 153, 211);
     border-radius: 10px;
 }
 
@@ -96,9 +96,9 @@ main {
 }
 
 .disclaimer {
-    background-color: rgb(40, 168, 161);
+    background-color: rgb(93, 163, 229);
     padding: 15px;
-    border: rgb(27, 166, 159) 3px solid;
+    border: rgb(91, 153, 211) 3px solid;
     border-radius: 10px;
 }
 
